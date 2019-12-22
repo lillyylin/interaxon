@@ -1,0 +1,161 @@
+@font-face {
+	font-family: firstfont;
+	src: url(nouvelle_vague_final.ttf);
+}
+@font-face{
+	font-family: secondfont;
+	src: url(Quicksand_Book_Oblique.otf);
+
+}
+@keyframes fadeEffect{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.tabcontent {
+	display: none;
+	font-family: secondfont;
+	position: relative;
+	top: 200px;
+	left: 200px;
+	font-size: 1em;
+	width: 700px;
+	height: 100%;
+	padding: 50px;
+	background-color: white;
+	line-height: 1em;
+	animation: fadeEffect 1s;
+}
+
+#title {
+	font-family: firstfont;
+	font-weight: 300px;
+	font-size: 9em;
+	background-color: inherit;
+	padding: 0px;
+	border: none;
+	position: relative;
+	top: 200px;
+	left: 75px;
+	z-index:2;
+
+}
+#subtitle {
+	font-family: firstfont;
+	font-size: 1em;
+	padding: 0;
+	position: relative;
+	top: 175px;
+	left: 80px;
+	z-index: 2;
+}
+
+#logo{
+	position: absolute;
+	width: 400px;
+	top: 100px;
+	right: 60px;
+}
+
+#missionstatement{
+	font-family: secondfont;
+	font-size: 1.5em;
+	text-align: justify;
+	position: relative;
+	width: 650px;
+	top: 225px;
+	left: 350px;
+	z-index: 2;
+	animation: fadeEffect 1s;
+}
+
+.navbar {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 2;
+}
+
+.navbar button{
+	font-family: secondfont;
+	font-size: 1em;
+	text-align: center;
+	background-color:inherit;
+	border:none;
+	height: 30px;
+}
+
+.navbar button.active{
+	background-color: grey;
+}
+.navbar button:hover{
+	background-color:grey;
+}
+
+#abt_btn {
+	width: 100px;
+}
+#abt_btn:hover{
+	background-color: grey;
+}
+
+#login,#useraccount,#logout {
+	position: fixed;
+	top: 10px;
+	right: 35px;
+	background-color: inherit;
+	border: none;
+	padding: 10px;
+	font-family: secondfont;
+	font-size: 1em;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+
+}
+body {	
+	background-image: url(ia_bg-02.png);
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.btn {
+	font-family: secondfont;
+	font-size: 1.5em;
+	text-align: center;
+	background-color:inherit;
+	border:none;
+	padding: 10px;
+	height: 100%;
+	position: fixed;
+	top: 75px;
+	right: 50px;
+}
+
+#pictures {
+	padding: 20px;
+
+}
+
+#fifthpic{
+	position: relative;
+	top: -634px;
+}
+
+#useraccount{
+	right:150px;
+	width: 150px;
+}
+
+#useraccount:hover, #logout:hover, #login:hover{
+	background-color: grey;
+}
+
+
+#resources{
+	font-family: secondfont;
+	font-size: 1em;
+}
+#lilly,#andre,#sacci,#jasmine{
+	padding: 20px;
+}

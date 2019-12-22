@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<?php
+	session_start();
+	$_SESSION['loggedin'] = false;
+?>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script src="index.js" defer></script>
+	<title> InterAxon at UCLA </title>
+</head>
+
+<body>
+	<button class="home" onclick="openhome(event,'home')" id="title"> Interaxon</button>
+	<p id="subtitle"> Undergraduate Educational Neuroscience Outreach Group at UCLA <p>
+	<p id="missionstatement"> Our mission is to create and foster interest, excitement, and curiosity about the brain. We travel to elementary schools, middle schools, and high schools in disadvantaged areas of Los Angeles to work with students at schools receiving poor funding in the sciences.
+	</p> 
+	<div class="navbar">
+		<button id="abt_btn" class="tablinks" onclick="opentab(event,'About')"> About Us </button>
+		<button class="tablinks" onclick="opentab(event,'Membership')"> Membership </button>
+		<button class="tablinks" onclick="opentab(event,'Board')"> Meet The Board </button>
+		<button class="tablinks" onclick="opentab(event,'Gallery')"> Gallery </button>
+		<button class="tablinks" onclick="opentab(event,'Contact')"> Contact Us </button>
+		<button class="tablinks" onclick="opentab(event,'Resources')"> Resources </button>
+	</div>
+
+	<button id="login"> Login </button>
+
+	<div id="About" class="tabcontent">
+		<h2> About Us </h2>
+		<p> InterAxon was founded at UCLA in 2008 in affliation with the Brain Research Institute (BRI). Our club specifically targets Title I schools, which describe K-12 schools that are underfunded in the sciences. We aim to build the confidence of these students so that they are less intimidated by STEM fields in the future! <br> <br>
+
+		InterAxon is able to organize events with K-12 schools. Our trained members present a multitude of poster boards covering various topics in Neuroscience, such as: Senses, Language Development, Neuromarketing, and so much more! Our members work hard to keep our posters up to date and full of engaging and educational activities. 
+		<br><br>
+
+		InterAxon offers different committees for members to participate in. Project Glia creates and refurbishes posters. Our Brochure committee designs fun and educational brochures that correspond to posters so that our students have something to bring home. This year, we are proud to announce the start of the Newsletter Committee: a way to keep in contact with schools we teach at. 
+		</p>
+	</div>
+
+	<div id="Membership" class="tabcontent"> <!-- make a list -->
+		<h2> Spring '18 Active Members </h2>
+		<p>
+			Adam Ross <br>
+			Ashleigh Scott <br>
+			Diana Castro <br>
+			Dimpy Wraich<br>
+			Gevork Mkrtchyan<br>
+			Gurkamal Dhaliwal<br>
+			Haidy Beshay<br>
+			Harjas Sabharwal<br>
+			Jakob von Morgenland<br>
+			Jayesh Menon<br>
+			Laila Khorasani<br>
+			Mikaila Bantugan<br>
+			Nicole Yee<br>
+​
+		</p>
+		<h2> Become A Member </h2>
+		<h3> General Meetings </h3>
+		<p> Fall Quarter - Wednesdays at 5:00PM <br>
+		Gonda Neuroscience and Genetics Research Center - First Floor Conference Room (1357) 
+		</p>
+		<p> 1. Print and complete the Publicity Release form <br>
+			2. Print and complete the Risk Agreement form <br>
+			3. Turn in a one-time $20 membership fee used to cover t-shirts <br>
+
+			These forms can be turned in during General Meetings. They do not have to be completed to attend General Meetings, just before site visits!
+</p>
+
+	</div>
+
+	<div id="Board" class= "tabcontent">
+
+	</div>
+
+	<div id="Gallery" class="tabcontent">
+	</div>
+
+	<div id="Contact" class= "tabcontent">
+	</div>
+
+	<div id="Resources" class="tabcontent">
+	</div>
+<!--	<div class="pics">
+	<img id="firstpic" src="interaxon-1.jpg"/>
+	<img id="secondpic" src="interaxon-2.jpg"/>
+	<img id="thirdpic" src="interaxon-3.jpg"/>
+	<img id="fourthpic" src="interaxon-4.jpg"/>
+	<img id="fifthpic" src="interaxon-5.jpg"/>
+	</div>-->
+
+</body>
+</html>
